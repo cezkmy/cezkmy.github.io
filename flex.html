@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charme Fernandez</title>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap' rel='stylesheet'>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            justify-content: center;
+            align-items: center"";
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(143, 69, 69, 0.6)), url(/d.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        nav {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 99;
+        }
+
+        .nav__content {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 1.5rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            list-style: none;
+            transition: left 0.3s;
+        }
+
+        ul li a {
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            text-decoration: none;
+            font-weight: 600;
+            color: rgb(104, 22, 69);
+        }
+
+        ul li:nth-child(1) a:hover {
+            border-top-color: rgba(143, 69, 69, 0.6);
+            border-bottom-color: rgba(143, 69, 69, 0.6);
+        }
+
+        ul li:nth-child(2) a:hover {
+              border-top-color: rgba(143, 69, 69, 0.6);
+              border-bottom-color: rgba(143, 69, 69, 0.6);
+        }
+
+        ul li:nth-child(3) a:hover {
+            border-top-color: rgba(143, 69, 69, 0.6);
+            border-bottom-color: rgba(143, 69, 69, 0.6);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: auto;
+            
+        }
+
+        .box {
+            position: relative;
+            width: 480px; 
+            height: 480px; 
+            transition: 0.5s;
+            transform-style: preserve-3d;
+            overflow: hidden;
+            margin-right: 15px;
+            margin-top: 45px;
+        }
+
+        .container:hover .box {
+            transform: rotateY(25deg);
+        }
+
+        .container .box:hover~.box {
+            transform: rotateY(-25deg);
+        }
+
+        .container .box:hover {
+            transform: rotateY(0deg) scale(1.25);
+            z-index: 1;
+            box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .imgBx {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container .box .imgBx:before {
+            content :"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(159, 82, 82, 0.722), #000000a2);
+            z-index: 1;
+            opacity: 0;
+            transition: 0.5s;
+            mix-blend-mode: multiply;
+        }
+
+        .container .box:hover .imgBx:before {
+            opacity: 1;
+        }
+
+        .container .box .imgBx img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+        }
+
+        .container .box .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            align-items: flex-end;
+            box-sizing: border-box;
+        }
+
+        .container .box .content h2 {
+            color: #fff;
+            transition: 0.5s;
+            text-transform: uppercase;
+            margin-top: 15%;
+            margin-bottom: 10px;
+            font-size: 25px;
+            transform: translateY(200px);
+            transition-delay: 0.3s;
+            opacity: 0;
+        }
+
+        .container .box:hover .content h2 {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+
+        .container .box .content p {
+            color: #fff;
+            transition: 0.5s;
+            margin-top: 10%;
+            margin-bottom: 5px;
+            font-size: 15px;
+            transform: translateY(200px);
+            transition-delay: 0.4s;
+            opacity: 0;
+        }
+
+        .container .box:hover .content p {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+     footer {
+
+            text-align: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2.5rem;
+            color: white;
+        }
+
+        footer a {
+            text-decoration: none;
+            padding-inline: 1.25rem;
+            color: white;
+        }
+
+        footer p {
+            font-weight: 500;
+            cursor: pointer;
+            margin-right: 43%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__content">
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/blog.html">IT111 BLOG ENTRIES</a></li>
+                <li><a href="/flex.html">FLEX PAGE</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="box">
+            <div class="imgBx">
+                <img src="/f1.jpg">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>MY MOTHER</h2>
+                    <p>I want to flex this gorgeous woman who shaped me into who I am today – my very strong and wonderful mother. Her strong personality, patience, and unconditional love are my daily reminders not to give up. This person never gave up on us; she endured so much pain, mentally, just to provide for our needs and wants. I'm lucky to have her, and I love her so much. I will do everything for her so she can experience life without working.
+                      </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <img src="/f2.jpg">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>MY BROTHER</h2>
+                    <p>I just want to flex my brother, who is the pride of our family. He studied at FEU, one of the prestigious universities in the Philippines, and he's also a scholar there. When he first entered the university and was selected to perform in the UAAP Cheerdance tournament, I never thought they would win against other powerful schools because it was his first time performing at the MOA Arena. I'm truly proud of his achievements. I never imagined having a brother who performs live; he is incredibly talented. I'm grateful to have such a talented brother.
+                    </p>
+                </div>
+            </div>
+       </div>
+    </div>
+
+    <footer>
+       <a href="#">Flex</a>
+       <p style="margin-right: 40%;">&copy; Charme Fernandez 2023.</p>
+    </footer>
+</body>
+
+</html>
+
+

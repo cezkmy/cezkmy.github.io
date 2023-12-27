@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charme Fernandez</title>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap' rel='stylesheet'>
+  
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+               background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(143, 69, 69, 0.6)), url(/c.jpg);
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: 0.3s;
+        }
+
+        nav {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 99;
+        }
+
+        .nav__content {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 1.5rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            list-style: none;
+            transition: left 0.3s;
+        }
+
+        ul li a {
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            text-decoration: none;
+            font-weight: 600;
+            color: rgb(104, 22, 69);
+            transition: 0.3s;
+        }
+
+        ul li a:hover {
+              border-top-color: rgba(143, 69, 69, 0.6);
+              border-bottom-color: rgba(143, 69, 69, 0.6);
+        }
+
+        ul li:nth-child(1) a:hover {
+            background-color: white;
+            border-top-color: rgba(143, 69, 69, 0.6);
+            border-bottom-color: rgba(143, 69, 69, 0.6);
+            color: rgb(179, 72, 72);
+        }
+
+        ul li:nth-child(2) a:hover {
+            background-color: white;
+            color: rgb(179, 72, 72);
+        }
+
+        ul li:nth-child(3) a:hover {
+            background-color: white;
+            border-top-color: rgba(143, 69, 69, 0.6);
+            border-bottom-color: rgba(143, 69, 69, 0.6);
+            color: rgb(179, 72, 72);
+        }
+        .c-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            padding: 2rem;
+            
+        }
+
+        .c-container div {
+            flex: 1;
+            text-align: center;
+            background: White ;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .c-container div:hover {
+            background-color: lightpink;
+            color: darkred;
+        }
+
+        .c-container img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            object-fit: contain;
+            max-height: 300px;
+        }
+
+        .c-container p {
+            color: black;
+            line-height: 1.5;
+        }
+
+    
+        footer {
+               text-align: center;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               padding: 1rem 2.5rem;
+               color: rgb(143, 69, 69);
+             }
+        
+             footer a {
+               text-decoration: none;
+               padding-inline: 1.25rem;
+               color: rgb(143, 69, 69);
+             }
+        
+             footer p {
+               font-weight: 500;
+               cursor: pointer;
+               margin-right: 43%;
+             }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav__content">
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/blog.html">IT111 BLOG ENTRIES</a></li>
+                <li><a href="/flex.html">FLEX PAGE</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="c-container">
+
+        <div class="c1">
+            <h3>LESSON 1</h3>
+            <img src="/1.jpg" alt="Lesson 1 Image">
+            <p>Introduction to Computing typically covers fundamental concepts in computer science and information technology. 
+                As a student I learn about the basics of computer systems. This lesson also introduce key topics like computer hardware, software, networking, and the impact of computing on society.</p>
+        </div>
+
+        <div class="c2">
+            <h3>LESSON 2</h3>
+            <img src="/2.jpg" alt="Lesson 2 Image">
+            <p>The professions and careers in computing offer diverse opportunities, including roles such as a software developer, network engineer, data scientist, cybersecurity analyst, systems analyst, database administrator, and IT project manager. It helps me determine which job best suits me in the future.</p>
+        </div>
+
+        <div class="c3">
+            <h3>LESSON 3</h3>
+            <img src="/3.jpg" alt="Lesson 3 Image">
+            <p>The information processing cycle is a sequence of steps that computers follow to process data, including input, processing, output, 
+                and storage. </p>
+        </div>
+
+        <div class="c4">
+            <h3>LESSON 4</h3>
+            <img src="/4.jpg" alt="Lesson 4 Image">
+            <p>A computer has four components: hardware, software, peopleware, and dataware. In this lesson, I learned a lot about what peopleware and dataware actually are. At first, I didn't know what peopleware and dataware were; I was only familiar with software and hardware. This lesson helped me learn more about computers.</p>
+        </div>
+
+        <div class="c5">
+            <h3>LESSON 5</h3>
+            <img src="/5.jpg" alt="Lesson 5 Image">
+            <p>A number system represents numbers and is also known as the system of numeration. It defines a set of values to represent quantities. In the context of computers, there are four types of number systems:The decimal number system
+, Binary number system
+, Octal number system and Dexadecimal number system.
+</p>
+        </div>
+
+        <div class="last">
+            <h3>HTML AND CSS</h3>
+            <img src="/6.jpg" alt="HTML and CSS Image">
+            <p>HTML and CSS are scripting languages used to create web pages and web applications. HTML structures content, defining elements such as headings and paragraphs, while CSS handles presentation. I struggle a lot in this lesson because I don't have experience with HTML and CSS. Also, no one will teach me personally, so I rely on watching videos on YouTube. </p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="#">Blog</a>
+        <p style="margin-right: 40%;">&copy; Charme Fernandez 2023.</p>
+    </footer>
+</body>
+
+</html>
