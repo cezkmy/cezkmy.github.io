@@ -2,26 +2,31 @@
 <html lang="en">
 
 <head>
+      <!-- Meta tags for character set, compatibility, viewport, and page title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charme Fernandez</title>
+        <!-- Linking Google Fonts and Boxicons stylesheets -->
+  
     <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap' rel='stylesheet'>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+            <!-- Opening style tag for internal CSS -->
+        <!-- Styles for the body -->
         <style>
+         /* Global styles for smooth scrolling and box-sizing */
         html {
             scroll-behavior: smooth;
         }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+          /* Body styles using the Poppins font */
         body {
             font-family: 'Poppins', sans-serif;
         }
-
+        /* Styles for the navigation bar */
         nav {
             width: 100%;
             position: relative;
@@ -29,7 +34,7 @@
             left: 0;
             z-index: 99;
         }
-
+        /* Styles for the navigation content */
         .nav__content {
             max-width: var(--max-width);
             margin: auto;
@@ -39,7 +44,7 @@
             justify-content: center; 
             background: white;
         }
-
+        /* styles for navigation links */
         ul {
             display: flex;
             align-items: center;
@@ -47,7 +52,7 @@
             list-style: none;
             transition: left 0.3s;
         }
-
+        /* Styles for navigation link items */
         ul li a {
             padding: 0.5rem 1rem;
             border: 2px solid transparent;
@@ -56,12 +61,12 @@
             color: rgb(104, 22, 69);
             transition: 0.3s;
         }
-
+        /* Hover styles for navigation link items */
         ul li a:hover {
             background-color: white;
             color: rgb(179, 72, 72);
         }
-
+        /* Additional styles for specific navigation links */
         ul li:nth-child(1) a:hover {
             background-color: white;
             border-top-color: rgba(143, 69, 69, 0.6);;
@@ -80,7 +85,7 @@
             border-bottom-color: rgba(143, 69, 69, 0.6);
             color:rgb(179, 72, 72);
         }
-
+    /* Socials styles with links and hover effects */
         .container {
             background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(143, 69, 69, 0.6)), url(/a.jpg);
             height: 100vh;
@@ -88,12 +93,13 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+          /* Final section styles with white text */
         .final {
             color: white;
             padding: 10rem 5rem 0 5rem;
             font-size: 140px;
         }
-
+        /* Name styles with uppercase text and a span for extra styling */
         .name {
             font-size: 140px;
             text-transform: uppercase;
@@ -104,7 +110,7 @@
             font-weight: 900;
             letter-spacing: 2px;
         }
-
+        /* About Me section styles with background color, image, and text */
         .Me {
             background-position: center;
             background-size: cover;
@@ -116,7 +122,7 @@
             padding: 9rem 7.5rem;
             justify-content: space-between;
         }
-
+        /* Socials styles with links and hover effects */
         .socials {
             display: flex;
             justify-content: space-around;
@@ -138,12 +144,12 @@
             position: relative;
             margin: 0 10px;
         }
-
+        /* Hover styles for social links */
         .socials a:hover {
             color: rgba(255, 255, 255, 0.6);
             background-color:rgba(243, 243, 243, 0.599);
         }
-
+         /* Additional styles for social link before pseudo-element */
         .socials a::before {
            
             position: absolute;
@@ -159,17 +165,17 @@
         .socials a:hover::before {
             width: 100%;
         }
-
+        /* Styling for left section of About Me */
         .Me-left {
             width: 50ch;
         }
-
+        /* Paragraph styles within About Me */
         .Me p {
             line-height: 2;
             color: rgba(255, 255, 255, 0.784);
             text-align: center;
         }
-
+        /* Image styles within About Me */
         .Me-img {
             width: 400px;
             height: 400px;
@@ -178,7 +184,7 @@
             margin-left: 0;
             margin-right: auto; 
         }
-
+        /* Image styles within Image section */
         .image {
             display: flex;
             justify-content: flex-start;
@@ -191,13 +197,13 @@
             height: 500px;
             border-radius: 10px;
         }
-
+        /* H3 styles for video section */
         h3 {
             font-size: 70px;
             color: rgba(255, 255, 255, 0.784);
             text-align: center; 
         }
-
+          /* Footer styles */
      footer {
                text-align: center;
                display: flex;
@@ -206,13 +212,13 @@
                padding: 1rem 2.5rem;
                color: rgb(143, 69, 69);
              }
-        
+                /* Styles for footer links */
              footer a {
                text-decoration: none;
                padding-inline: 1.25rem;
                color: rgb(143, 69, 69);
              }
-        
+         /* Paragraph styles within footer */ 
              footer p {
                font-weight: 500;
                cursor: pointer;
@@ -222,30 +228,34 @@
 </head>
 
 <body>
-
+    <!-- Navigation Section -->
     <nav>
-        <div class="nav__content">
+        <div class="nav__content"
             <ul>
+              <!-- list for navigation links -->
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/blog.html">IT111 BLOG ENTRIES</a></li>
                 <li><a href="/flex.html">FLEX PAGE</a></li>
             </ul>
         </div>
     </nav>
-
+    <!-- Container Section with a final output -->
     <div class="container" id="home">
         <section>
             <div class="final">
+                  <!-- Final output styling -->
                 <div class="name">IT111<br>
                     <span>Final Output</span>
                 </div>
             </div>
         </section>
     </div>
-
+    <!-- About Me Section -->
     <section class="Me" id="about">
-        <div class="Me-left">
+    <!-- Left section with About Me content -->
+               <div class="Me-left">
             <h3>ABOUT ME</h3>
+    <!-- Social links and personal information -->
             <div class="socials">
                 <a href="https://web.facebook.com/charme.fernandez.1/"><i class='bx bxl-facebook'></i></a>
                 <a href="https://www.instagram.com/cezkmy_?igshid=MmVlMjlkMTBhMg=="><i class='bx bxl-instagram'></i></a>
@@ -256,17 +266,19 @@
                 Hello! I'm Charme Fernandez, 18 years old, currently residing in Barangay Casisang, Purok 6, Malaybalay City. I'm a 1st-year BSIT student at Bukidnon State University. My hobbies include reading manga and novels, watching movies, and playing Mobile Legends.
             </p>
         </div>
-
+        <!-- Right section with an image -->
         <div class="image">
             <img src="/b.jpg" alt="Charm">
         </div>
     </section>
-
+    <!-- Video Section -->
     <div class="video" style="text-align: center;">
         <h2 style=" color: salmon; margin-top: 5%; margin-bottom: 3%;">HOW DO YOU SEE YOURSELF 8 YEARS FROM NOW?</h2>
+          <!-- Video content with styling -->
         <video src="/v.mp4" autoplay controls style="width: 100%; max-width: 900px; height: 400px; margin-bottom: 3%;"></video>
     </div>
     <footer>
+    <!-- Footer links and copyright information -->
         <a href="#">Home</a>
         <p style="margin-right: 40%;">&copy; Charme Fernandez 2023.</p>
     </footer>
