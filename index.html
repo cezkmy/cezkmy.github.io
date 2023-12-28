@@ -26,7 +26,7 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
-        /* Styles for the navigation bar */
+        /* Navigation styles */
         nav {
             width: 100%;
             position: relative;
@@ -34,6 +34,7 @@
             left: 0;
             z-index: 99;
         }
+
         /* Styles for the navigation content */
         .nav__content {
             max-width: var(--max-width);
@@ -41,10 +42,11 @@
             padding: 1.5rem 1rem;
             display: flex;
             align-items: center;
-            justify-content: center; 
+            justify-content: center;
             background: white;
         }
-        /* styles for navigation links */
+
+        /* Unordered list styles for navigation links */
         ul {
             display: flex;
             align-items: center;
@@ -52,6 +54,7 @@
             list-style: none;
             transition: left 0.3s;
         }
+
         /* Styles for navigation link items */
         ul li a {
             padding: 0.5rem 1rem;
@@ -61,29 +64,31 @@
             color: rgb(104, 22, 69);
             transition: 0.3s;
         }
+
         /* Hover styles for navigation link items */
         ul li a:hover {
-            background-color: white;
-            color: rgb(179, 72, 72);
+            border-top-color: rgba(143, 69, 69, 0.6);
+            border-bottom-color: rgba(143, 69, 69, 0.6);
         }
+
         /* Additional styles for specific navigation links */
         ul li:nth-child(1) a:hover {
             background-color: white;
-            border-top-color: rgba(143, 69, 69, 0.6);;
+            border-top-color: rgba(143, 69, 69, 0.6);
             border-bottom-color: rgba(143, 69, 69, 0.6);
             color: rgb(179, 72, 72);
         }
 
         ul li:nth-child(2) a:hover {
-              border-top-color: rgba(143, 69, 69, 0.6);
-            border-bottom-color: rgba(143, 69, 69, 0.6);
+            background-color: white;
+            color: rgb(179, 72, 72);
         }
 
         ul li:nth-child(3) a:hover {
             background-color: white;
-            border-top-color: rgba(143, 69, 69, 0.6);;
+            border-top-color: rgba(143, 69, 69, 0.6);
             border-bottom-color: rgba(143, 69, 69, 0.6);
-            color:rgb(179, 72, 72);
+            color: rgb(179, 72, 72);
         }
     /* Socials styles with links and hover effects */
         .container {
@@ -230,10 +235,10 @@
 <body>
     <!-- Navigation Section -->
     <nav>
-        <div class="nav__content"
+        <div class="nav__content">
+            <!-- Unordered list for navigation links -->
             <ul>
-              <!-- list for navigation links -->
-                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">HOME</a></li>
                 <li><a href="/blog.html">IT111 BLOG ENTRIES</a></li>
                 <li><a href="/flex.html">FLEX PAGE</a></li>
             </ul>
@@ -283,5 +288,6 @@
         <p style="margin-right: 40%;">&copy; Charme Fernandez 2023.</p>
     </footer>
 </body>
+
 
 </html>
