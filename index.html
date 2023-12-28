@@ -208,20 +208,28 @@
             color: rgba(255, 255, 255, 0.784);
             text-align: center; 
         }
-        /* Footer styles */
-        footer {
-            margin-top: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 1rem 2.5rem;
-            color: rgb(152, 67, 67);
-        }
+                        /* Footer styles */
+     footer {
+               text-align: center;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               padding: 1rem 2.5rem;
+               color: rgb(143, 69, 69);
+             }
+                /* Styles for footer links */
+             footer a {
+               text-decoration: none;
+               padding-inline: 1.25rem;
+               color: rgb(143, 69, 69);
+             }
+         /* Paragraph styles within footer */ 
+             footer p {
+               font-weight: 500;
+               cursor: pointer;
+               margin-right: 43%;
+             }
 
-        footer p {
-            font-weight: 500;
-            cursor: pointer;
-        }
     </style>
 </head>
 
@@ -237,6 +245,7 @@
             </ul>
         </div>
     </nav>
+  
     <!-- Container Section with a final output -->
     <div class="container" id="home">
         <section>
@@ -276,7 +285,9 @@
         <video src="/v.mp4" autoplay controls style="width: 100%; max-width: 900px; height: 400px; margin-bottom: 3%;"></video>
     </div>
     <footer>
-        <p>&copy; Charme Fernandez 2023.</p>
+    <!-- Footer links and copyright information -->
+        <a href="#">Home</a>
+        <p style="margin-right: 40%;">&copy; Charme Fernandez 2023.</p>
     </footer>
 </body>
 
