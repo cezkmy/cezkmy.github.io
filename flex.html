@@ -2,31 +2,28 @@
 <html lang="en">
 
 <head>
-    <!-- Meta tags for character set, compatibility, viewport, and page title -->
+      <!-- Meta tags for character set, compatibility, viewport, and page title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charme Fernandez</title>
-
-    <!-- Linking Google Fonts -->
+        <!-- Linking Google Fonts -->
     <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap' rel='stylesheet'>
-
-    <!-- Internal styles for the document -->
+        <!-- Internal styles for the document -->
     <style>
-        /* Global styles for smooth scrolling and box-sizing */
+            /* Global styles for smooth scrolling and box-sizing */
         html {
             scroll-behavior: smooth;
         }
 
-        * {
+        *{
             margin: 0;
             padding: 0;
         }
-
         /* Body styles using the Poppins font, flex layout, and gradient background with an image */
         body {
             font-family: 'Poppins', sans-serif;
             justify-content: center;
-            align-items: center;
+            align-items: center"";
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -37,9 +34,7 @@
             height: 100vh;
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
         }
-
         /* Navigation styles */
         nav {
             width: 100%;
@@ -48,7 +43,6 @@
             left: 0;
             z-index: 99;
         }
-
         /* Styles for the navigation content */
         .nav__content {
             max-width: var(--max-width);
@@ -59,8 +53,7 @@
             justify-content: center;
             background: white;
         }
-
-        /* Unordered list styles for navigation links */
+  /* Unordered list styles for navigation links */
         ul {
             display: flex;
             align-items: center;
@@ -68,8 +61,7 @@
             list-style: none;
             transition: left 0.3s;
         }
-
-        /* Styles for navigation link items */
+          /* Styles for navigation link items */
         ul li a {
             padding: 0.5rem 1rem;
             border: 2px solid transparent;
@@ -77,61 +69,56 @@
             font-weight: 600;
             color: rgb(104, 22, 69);
         }
-
-        /* Hover styles for specific navigation link items */
+          /* Hover styles for specific navigation link items */
         ul li:nth-child(1) a:hover {
             border-top-color: rgba(143, 69, 69, 0.6);
             border-bottom-color: rgba(143, 69, 69, 0.6);
         }
 
         ul li:nth-child(2) a:hover {
-            border-top-color: rgba(143, 69, 69, 0.6);
-            border-bottom-color: rgba(143, 69, 69, 0.6);
+              border-top-color: rgba(143, 69, 69, 0.6);
+              border-bottom-color: rgba(143, 69, 69, 0.6);
         }
 
         ul li:nth-child(3) a:hover {
             border-top-color: rgba(143, 69, 69, 0.6);
             border-bottom-color: rgba(143, 69, 69, 0.6);
         }
-
         /* Container styles for the image boxes */
         .container {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             margin: auto;
+            
         }
-
         /* Styles for individual image boxes */
+     
         .box {
             position: relative;
-            width: 480px;
-            height: 480px;
+            width: 480px; 
+            height: 480px; 
             transition: 0.5s;
             transform-style: preserve-3d;
             overflow: hidden;
             margin-right: 15px;
             margin-top: 45px;
         }
-
         /* Hover styles for image boxes within the container */
         .container:hover .box {
             transform: rotateY(25deg);
         }
-
         /* Styles for image boxes on hover */
         .container .box:hover~.box {
             transform: rotateY(-25deg);
         }
-
-        /* Additional hover styles for the selected image box */
+      /* Additional hover styles for the selected image box */
         .container .box:hover {
             transform: rotateY(0deg) scale(1.25);
             z-index: 1;
             box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
         }
-
-        /* Styles for the image within the image box */
+           /* Styles for the image within the image box */
         .imgBx {
             position: absolute;
             top: 0;
@@ -139,10 +126,9 @@
             width: 100%;
             height: 100%;
         }
-
-        /* Styles for the overlay effect on the image */
+          /* Styles for the overlay effect on the image */
         .container .box .imgBx:before {
-            content: "";
+            content :"";
             position: absolute;
             top: 0;
             left: 0;
@@ -162,11 +148,10 @@
 
         /* Styles for the image within the image box */
         .container .box .imgBx img {
-            width: 100%;
-            height: 100%;
+            width: 100%; 
+            height: 100%; 
             object-fit: cover;
         }
-
         /* Styles for the content within the image box */
         .container .box .content {
             position: absolute;
@@ -181,8 +166,7 @@
             align-items: flex-end;
             box-sizing: border-box;
         }
-
-        /* Styles for the heading within the content */
+      /* Styles for the heading within the content */
         .container .box .content h2 {
             color: #fff;
             transition: 0.5s;
@@ -194,14 +178,12 @@
             transition-delay: 0.3s;
             opacity: 0;
         }
-
         /* Hover styles for the heading on box hover */
         .container .box:hover .content h2 {
             transform: translateY(0px);
             opacity: 1;
         }
-
-        /* Styles for the paragraph within the content */
+           /* Styles for the paragraph within the content */
         .container .box .content p {
             color: #fff;
             transition: 0.5s;
@@ -212,16 +194,17 @@
             transition-delay: 0.4s;
             opacity: 0;
         }
-
-        /* Hover styles for the paragraph on box hover */
+         /* Hover styles for the paragraph on box hover */
         .container .box:hover .content p {
             transform: translateY(0px);
             opacity: 1;
         }
+        
+          /* Footer styles */
+     footer {
 
-        /* Footer styles */
-        footer {
-            margin-top: auto;
+            text-align: center;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -229,62 +212,71 @@
             color: white;
         }
 
+        footer a {
+            text-decoration: none;
+            padding-inline: 1.25rem;
+            color: white;
+        }
+
         footer p {
             font-weight: 500;
             cursor: pointer;
+            margin-right: 43%;
         }
     </style>
 </head>
 
 <body>
-    <!-- Navigation section -->
+      <!-- Navigation section -->
     <nav>
         <div class="nav__content">
             <ul>
-                <li><a href="/index.html">HOME</a></li>
+            <!-- Unordered list for navigation links -->
+                <li><a href="/home.html">HOME</a></li>
                 <li><a href="/blog.html">IT111 BLOG ENTRIES</a></li>
                 <li><a href="/flex.html">FLEX PAGE</a></li>
             </ul>
         </div>
     </nav>
-
     <!-- Image box container section -->
     <div class="container">
-        <!-- First image box -->
+              <!-- First image box -->
         <div class="box">
             <div class="imgBx">
                 <img src="/f1.jpg">
             </div>
             <div class="content">
                 <div>
-                    <!-- paragraph for the first image box -->
+              <!-- paragraph for the first image box -->
                     <h2>MY MOTHER</h2>
                     <p>I want to flex this gorgeous woman who shaped me into who I am today – my very strong and wonderful mother. Her strong personality, patience, and unconditional love are my daily reminders not to give up. This person never gave up on us; she endured so much pain, mentally, just to provide for our needs and wants. I'm lucky to have her, and I love her so much. I will do everything for her so she can experience life without working.
-                    </p>
+                      </p>
                 </div>
             </div>
         </div>
-
-        <!-- Second image box -->
+          <!-- Second image box -->
         <div class="box">
             <div class="imgBx">
                 <img src="/f2.jpg">
             </div>
             <div class="content">
                 <div>
-                    <!--paragraph for the second image box -->
+                   <!--paragraph for the second image box -->
                     <h2>MY BROTHER</h2>
                     <p>I just want to flex my brother, who is the pride of our family. He studied at FEU, one of the prestigious universities in the Philippines, and he's also a scholar there. When he first entered the university and was selected to perform in the UAAP Cheerdance tournament, I never thought they would win against other powerful schools because it was his first time performing at the MOA Arena. I'm truly proud of his achievements. I never imagined having a brother who performs live; he is incredibly talented. I'm grateful to have such a talented brother.
                     </p>
                 </div>
             </div>
-        </div>
+       </div>
     </div>
-
     <!-- Footer section -->
-        <footer>
-        <p>&copy; Charme Fernandez 2023.</p>
-        </footer>
+    <footer>
+       <a href="#">Flex</a>
+       <p style="margin-right: 40%;">&copy; Charme Fernandez 2023.</p>
+    </footer>
 </body>
 
 </html>
+
+
+                                      
